@@ -43,6 +43,7 @@ namespace CaseStudy.Automation.Helper
                 var ws = package.Workbook.Worksheets[0];
                 var c = ws.Cells[cell];
                 c.Value = value;
+                package.Save();
             }
         }
     }
